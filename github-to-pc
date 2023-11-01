@@ -26,10 +26,11 @@ STEP 3 - TERMINAL & GITHUB
 
 
 STEP 4 - ALLOWING CREATE/REFRESH FILES WITHOUT TOKEN
-1) run $ git remote set-url origin https://TOKEN-KEY@github.com/jacintoneto/TwoDM
+1) run $ git remote set-url origin https://TOKEN-KEY@github.com/jacintoneto/directoryname
 	EXAMPLE TOKEN-KEY: >> ghp_AXnzd5aWPQeEBNJFBfRggEpGsyk2HO3WQKSc <<
 	
 Now, when using $ git push origin main, it won't ask for a token.
+
 
 
 ANOTHER COMANDS
