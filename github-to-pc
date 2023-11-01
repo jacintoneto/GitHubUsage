@@ -1,0 +1,56 @@
+GitHub @ User PC
+
+STEP 1 - IN THE TERMINAL
+1) run $ sudo apt-get install git
+2) run $ git config --global user.name "nickname"
+3) run $ git config --global user.email "...@gmail.com"
+4) run $ git config --list
+
+
+STEP 2 - CREATING TOKEN
+1) profile > settings > developer settings > personal access tokens > Tokens (classic) > generate new token
+2) copy the token key -- it will be need to make the files upload-download from pc <-> github.
+
+STEP 3 - TERMINAL & GITHUB
+1) run $ mkdir "github-workspace-on-pc"
+2) create a new repository in GitHub account
+3) inside the workspace 
+ 	$ git clone https://github.com/jacintoneto/TwoDM.git 
+ (to take this link go to the repository in github > code > local > https)
+4) add a file into your workspace --> example.c
+5) run $ git add example.c 
+ 	it will add the example.c file into your github repository
+6) run $ git commit -m "comment something about the file"
+7) run $ git push origin main
+  >> it will need to use the username and token
+
+
+STEP 4 - ALLOWING CREATE/REFRESH FILES WITHOUT TOKEN
+1) run $ git remote set-url origin https://TOKEN-KEY@github.com/jacintoneto/TwoDM
+	EXAMPLE TOKEN-KEY: >> ghp_AXnzd5aWPQeEBNJFBfRggEpGsyk2HO3WQKSc <<
+	
+Now, when using $ git push origin main, it won't ask for a token.
+
+
+ANOTHER COMANDS
+
+$ git status
+
+$ git add --all
+
+ERROR #1
+
+o https://github.com/jacintoneto/TwoDM
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/jacintoneto/TwoDM'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SOLUTION #1
+
+$ git push -f origin main
+$ git push origin main
+$ git status
