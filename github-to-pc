@@ -38,6 +38,16 @@ $ git status
 
 $ git add --all
 
+
+REFRESH CHANGES IN GITHUB TO LOCAL PC
+$ 
+
+REFRESH CHANGES IN LOCAL PC TO GITHUB
+$ git add filename
+$ git commit -m "comment"
+$ git push origin main
+
+
 ERROR #1
 
 o https://github.com/jacintoneto/TwoDM
