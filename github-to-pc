@@ -47,6 +47,8 @@ $ git add filename (or --all)
 $ git commit -m "comment"
 $ git push origin main
 
+or just
+$ git pull origin main
 
 ERROR #1
 
