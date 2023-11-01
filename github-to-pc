@@ -42,13 +42,13 @@ $ git add --all
 REFRESH CHANGES IN GITHUB TO LOCAL PC
 $ git pull origin main
 
+
 REFRESH CHANGES IN LOCAL PC TO GITHUB
 $ git add filename (or --all)
 $ git commit -m "comment"
 $ git push origin main
 
-
-
+MUDANÇA NO PC
 
 ERROR #1
 
