@@ -41,7 +41,6 @@ $ git add --all
 
 REFRESH CHANGES IN GITHUB TO LOCAL PC
 $ git pull origin main
- Mudanças no github
 
 REFRESH CHANGES IN LOCAL PC TO GITHUB
 $ git add filename (or --all)
