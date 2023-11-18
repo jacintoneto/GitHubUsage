@@ -1,13 +1,13 @@
 GitHub @ User PC
 
-STEP 1 - IN THE TERMINAL
+INSTALLING AND LOGIN VIA TERMINAL
 1) run $ sudo apt-get install git
 2) run $ git config --global user.name "nickname"
 3) run $ git config --global user.email "...@gmail.com"
 4) run $ git config --list
 
 
-STEP 2 - CREATING TOKEN
+CREATING TOKEN
 1) profile > settings > developer settings > personal access tokens > Tokens (classic) > generate new token
 2) copy the token key -- it will be need to make the files upload-download from pc <-> github.
 
@@ -25,17 +25,19 @@ STEP 3 - TERMINAL & GITHUB
   >> it will need to use the username and token
 
 
-STEP 4 - ALLOWING CREATE/REFRESH FILES WITHOUT TOKEN
+ALLOWING CREATE/REFRESH FILES WITHOUT TOKEN
 1) run $ git remote set-url origin https://TOKEN-KEY@github.com/jacintoneto/directory
 	EXAMPLE TOKEN-KEY: >> ghp_AXnzd5aWPQeEBNJFBfRggEpGsyk2HO3WQKSc <<
 	
 Now, when using $ git push origin main, it won't ask for a token.
 
 
-ANOTHER COMANDS
+IMPORT REPOSITORIES FROM GITHUB TO MY PC
+$ git clone https://github.com/nome-do-usuario/nome-do-repositorio.git
 
+
+ANOTHER USEFUL COMANDS
 $ git status
-
 $ git add --all
 
 
